@@ -36,16 +36,17 @@ Docker, Docker compose
 make up`
 
 ## Основные эндпоинты
-Метод	Эндпоинт	Описание	Роль
-GET	/_info	Health check	public
-POST	/rooms/create	Создать переговорку	admin
-GET	/rooms/list	Список переговорок	admin/user
-POST	/rooms/{roomId}/schedule/create	Создать расписание	admin
-GET	/rooms/{roomId}/slots/list?date=YYYY-MM-DD	Доступные слоты	admin/user
-POST	/bookings/create	Создать бронь	user
-GET	/bookings/my	Мои брони	user
-POST	/bookings/{bookingId}/cancel	Отменить бронь	user
-GET	/bookings/list?page=1&pageSize=20	Все брони (пагинация)	admin
+| Метод | Эндпоинт                                   | Описание           | Роль       |
+|-------|--------------------------------------------|--------------------|------------|
+| Get   | /_info                                     | Health check       | public     |
+| Post  | /rooms/create                              | Создать комнату    | admin      |
+| Get   | /rooms/list                                | Список комнат      | admin/user |
+| Post  | /rooms/{roomId}/schedule/create            | Создать расписание | admin      |
+| Get   | /rooms/{roomId}/slots/list?date=YYYY-MM-DD | Доступные слоты    | admin/user |
+| Post  | /bookings/create                           | Создать бронь      | user       |
+| Get   | /bookings/my                               | Мои брони          | user       |
+| Post  | /bookings/{bookingId}/cancel               | Отменить бронь     | user       |
+| Get   | /bookings/list?page=1&pageSize=20          | Все брони          | admin      |
 
 ## Тестирование
 `make test-unit
