@@ -25,8 +25,8 @@ JWT-аутентификация с ролевой моделью (admin/user)
 Полноценная регистрация и логин по email/паролю
 
 ## Стек
-Go 1.25
-PostgreSQL 15
+Go 1.25,
+PostgreSQL 15,
 Docker, Docker compose
 
 ## Старт
