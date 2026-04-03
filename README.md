@@ -32,8 +32,10 @@ Docker, Docker compose
 ## Старт
 `docker-compose up --build`
 или 
-`make help
-make up`
+```
+make help
+make up
+```
 
 ## Основные эндпоинты
 | Метод | Эндпоинт                                   | Описание           | Роль       |
@@ -49,6 +51,8 @@ make up`
 | Get   | /bookings/list?page=1&pageSize=20          | Все брони          | admin      |
 
 ## Тестирование
-`make test-unit
+```
+make test-unit
 make test-integration
-make test-e2e`
+make test-e2e
+```
